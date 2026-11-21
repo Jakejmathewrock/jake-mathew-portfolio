@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b5bff" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bgGrad)" />
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="0" y1="500" x2="1200" y2="500" />
+    <line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="200" y1="0" x2="200" y2="700" />
+    <line x1="400" y1="0" x2="400" y2="700" />
+    <line x1="600" y1="0" x2="600" y2="700" />
+    <line x1="800" y1="0" x2="800" y2="700" />
+    <line x1="1000" y1="0" x2="1000" y2="700" />
+  </g>
+
+  <!-- App Top Navigation Bar -->
+  <rect x="0" y="0" width="1200" height="64" fill="#090d16" />
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#334155" stroke-width="1" />
+
+  <!-- Logo -->
+  <g transform="translate(40, 18)">
+    <rect width="28" height="28" rx="6" fill="url(#blueGrad)" />
+    <path d="M7 20 L14 8 L21 20 Z" fill="#ffffff" />
+    <text x="38" y="20" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" letter-spacing="1">AUTOVISTA</text>
+    <text x="145" y="20" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="13">| Dealership Management</text>
+  </g>
+
+  <!-- Nav links -->
+  <g transform="translate(480, 24)" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600">
+    <rect x="-10" y="-8" width="90" height="30" rx="6" fill="#3b5bff" opacity="0.2" />
+    <text x="0" y="12" fill="#38bdf8">Showroom</text>
+    <text x="110" y="12" fill="#94a3b8">Inventory</text>
+    <text x="210" y="12" fill="#94a3b8">Test Drives</text>
+    <text x="320" y="12" fill="#94a3b8">Customers</text>
+    <text x="425" y="12" fill="#94a3b8">Analytics</text>
+  </g>
+
+  <!-- Admin badge -->
+  <g transform="translate(1050, 18)">
+    <rect width="110" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="16" cy="14" r="5" fill="#10b981" />
+    <text x="30" y="18" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Admin Mode</text>
+  </g>
+
+  <!-- Banner / Hero Bar -->
+  <g transform="translate(40, 88)">
+    <rect width="1120" height="110" rx="16" fill="url(#blueGrad)" opacity="0.95" />
+    <text x="36" y="44" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="26">Dealership Showroom &amp; Live Inventory</text>
+    <text x="36" y="74" fill="#e0e7ff" font-family="system-ui, -apple-system, sans-serif" font-size="14">Manage vehicle allocations, customer bookings, sales pipelines, and test-drive schedules in real time.</text>
+    
+    <!-- Quick stats in banner -->
+    <g transform="translate(820, 22)">
+      <rect width="260" height="66" rx="12" fill="#090d16" opacity="0.45" />
+      <text x="20" y="28" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" text-transform="uppercase">Active Fleet</text>
+      <text x="20" y="52" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">48 Vehicles</text>
+      <text x="140" y="28" fill="#93c5fd" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" text-transform="uppercase">Test Drives</text>
+      <text x="140" y="52" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">12 Today</text>
+    </g>
+  </g>
+
+  <!-- Filter chips -->
+  <g transform="translate(40, 220)" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">
+    <rect x="0" y="0" width="80" height="32" rx="16" fill="#3b5bff" />
+    <text x="40" y="20" fill="#ffffff" text-anchor="middle">All (48)</text>
+
+    <rect x="92" y="0" width="115" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="149" y="20" fill="#cbd5e1" text-anchor="middle">Electric / Hybrid</text>
+
+    <rect x="219" y="0" width="110" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="274" y="20" fill="#cbd5e1" text-anchor="middle">Luxury Sedans</text>
+
+    <rect x="341" y="0" width="115" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="398" y="20" fill="#cbd5e1" text-anchor="middle">Performance SUVs</text>
+
+    <rect x="468" y="0" width="105" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="520" y="20" fill="#cbd5e1" text-anchor="middle">Sports Coupes</text>
+
+    <!-- Search box -->
+    <g transform="translate(760, 0)">
+      <rect width="360" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="36" y="20" fill="#64748b" font-weight="400">Search by model, VIN, or customer...</text>
+      <circle cx="20" cy="16" r="5" stroke="#64748b" stroke-width="1.5" fill="none" />
+      <line x1="24" y1="20" x2="28" y2="24" stroke="#64748b" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- 3 Car Inventory Cards -->
+  <!-- Card 1 -->
+  <g transform="translate(40, 275)">
+    <rect width="350" height="385" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+    <!-- Car Graphic Area -->
+    <rect x="12" y="12" width="326" height="175" rx="12" fill="#090d16" />
+    <!-- Car Silhouette -->
+    <path d="M45 135 C70 135, 80 100, 120 95 C160 90, 210 90, 240 105 C265 118, 290 125, 305 135 Z" fill="#3b5bff" opacity="0.8" />
+    <circle cx="85" cy="140" r="16" fill="#1e293b" stroke="#64748b" stroke-width="4" />
+    <circle cx="265" cy="140" r="16" fill="#1e293b" stroke="#64748b" stroke-width="4" />
+    <!-- Badge -->
+    <rect x="24" y="24" width="76" height="24" rx="12" fill="#10b981" opacity="0.2" />
+    <text x="62" y="40" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">AVAILABLE</text>
+    
+    <!-- Details -->
+    <text x="24" y="222" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Porsche Taycan Turbo S</text>
+    <text x="24" y="244" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Electric Powertrain • AWD • 750 HP</text>
+    
+    <!-- Specs Row -->
+    <g transform="translate(24, 260)" font-family="system-ui, -apple-system, sans-serif">
+      <rect width="90" height="38" rx="6" fill="#0f172a" />
+      <text x="45" y="16" fill="#64748b" font-size="10" text-anchor="middle">0-60 MPH</text>
+      <text x="45" y="31" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">2.6s</text>
+
+      <rect x="105" width="90" height="38" rx="6" fill="#0f172a" />
+      <text x="150" y="16" fill="#64748b" font-size="10" text-anchor="middle">RANGE</text>
+      <text x="150" y="31" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">278 Mi</text>
+
+      <rect x="210" width="90" height="38" rx="6" fill="#0f172a" />
+      <text x="255" y="16" fill="#64748b" font-size="10" text-anchor="middle">TOP SPEED</text>
+      <text x="255" y="31" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">161 MPH</text>
+    </g>
+
+    <!-- Price and Action -->
+    <line x1="24" y1="318" x2="326" y2="318" stroke="#1e293b" stroke-width="1" />
+    <text x="24" y="352" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">$185,000</text>
+    <rect x="190" y="330" width="136" height="34" rx="8" fill="#3b5bff" />
+    <text x="258" y="352" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Book Test Drive</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(425, 275)">
+    <rect width="350" height="385" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+    <rect x="12" y="12" width="326" height="175" rx="12" fill="#090d16" />
+    <path d="M45 135 C70 135, 90 98, 130 92 C170 88, 220 92, 250 108 C275 120, 290 128, 305 135 Z" fill="#6366f1" opacity="0.8" />
+    <circle cx="85" cy="140" r="16" fill="#1e293b" stroke="#64748b" stroke-width="4" />
+    <circle cx="265" cy="140" r="16" fill="#1e293b" stroke="#64748b" stroke-width="4" />
+    <rect x="24" y="24" width="76" height="24" rx="12" fill="#38bdf8" opacity="0.2" />
+    <text x="62" y="40" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">IN STOCK</text>
+    
+    <text x="24" y="222" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">BMW M4 Competition</text>
+    <text x="24" y="244" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">3.0L Twin-Turbo • RWD • 503 HP</text>
+    
+    <g transform="translate(24, 260)" font-family="system-ui, -apple-system, sans-serif">
+      <rect width="90" height="38" rx="6" fill="#0f172a" />
+      <text x="45" y="16" fill="#64748b" font-size="10" text-anchor="middle">0-60 MPH</text>
+      <text x="45" y="31" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">3.4s</text>
+
+      <rect x="105" width="90" height="38" rx="6" fill="#0f172a" />
+      <text x="150" y="16" fill="#64748b" font-size="10" text-anchor="middle">ENGINE</text>
+      <text x="150" y="31" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">I6 Twin</text>
+
+      <rect x="210" width="90" height="38" rx="6" fill="#0f172a" />
+      <text x="255" y="16" fill="#64748b" font-size="10" text-anchor="middle">TRANSMISSION</text>
+      <text x="255" y="31" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">8-Speed</text>
+    </g>
+
+    <line x1="24" y1="318" x2="326" y2="318" stroke="#1e293b" stroke-width="1" />
+    <text x="24" y="352" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">$78,800</text>
+    <rect x="190" y="330" width="136" height="34" rx="8" fill="#3b5bff" />
+    <text x="258" y="352" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Book Test Drive</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(810, 275)">
+    <rect width="350" height="385" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+    <rect x="12" y="12" width="326" height="175" rx="12" fill="#090d16" />
+    <path d="M45 135 C70 135, 85 96, 125 90 C165 86, 215 90, 245 106 C270 119, 290 126, 305 135 Z" fill="#818cf8" opacity="0.8" />
+    <circle cx="85" cy="140" r="16" fill="#1e293b" stroke="#64748b" stroke-width="4" />
+    <circle cx="265" cy="140" r="16" fill="#1e293b" stroke="#64748b" stroke-width="4" />
+    <rect x="24" y="24" width="76" height="24" rx="12" fill="#f59e0b" opacity="0.2" />
+    <text x="62" y="40" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">RESERVED</text>
+    
+    <text x="24" y="222" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Audi RS e-tron GT</text>
+    <text x="24" y="244" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Dual Electric Motor • Quattro • 637 HP</text>
+    
+    <g transform="translate(24, 260)" font-family="system-ui, -apple-system, sans-serif">
+      <rect width="90" height="38" rx="6" fill="#0f172a" />
+      <text x="45" y="16" fill="#64748b" font-size="10" text-anchor="middle">0-60 MPH</text>
+      <text x="45" y="31" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">3.1s</text>
+
+      <rect x="105" width="90" height="38" rx="6" fill="#0f172a" />
+      <text x="150" y="16" fill="#64748b" font-size="10" text-anchor="middle">BATTERY</text>
+      <text x="150" y="31" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">93.4 kWh</text>
+
+      <rect x="210" width="90" height="38" rx="6" fill="#0f172a" />
+      <text x="255" y="16" fill="#64748b" font-size="10" text-anchor="middle">CHARGING</text>
+      <text x="255" y="31" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">270 kW</text>
+    </g>
+
+    <line x1="24" y1="318" x2="326" y2="318" stroke="#1e293b" stroke-width="1" />
+    <text x="24" y="352" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">$104,900</text>
+    <rect x="190" y="330" width="136" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="258" y="352" fill="#cbd5e1" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">View Records</text>
+  </g>
+</svg>
+
